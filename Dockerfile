@@ -12,7 +12,7 @@ COPY . .
 ENV NEXT_TELEMETRY_DISABLED=1
 ARG NODE_ENV
 ENV NODE_ENV="${NODE_ENV}"
-RUN npm run build
+RUN npm run build && echo "=== .next contents ===" && ls -lah .next && echo "=== dirs ===" && find .next -maxdepth 2 -type d | sort
 
 FROM node:18-alpine AS runner
 WORKDIR /home/app
