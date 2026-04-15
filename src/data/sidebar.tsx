@@ -177,7 +177,7 @@ export const sidebars = [
     ),
   },
   {
-    title: "Video Game",
+    title: "Video Games",
     icons: (
       <Avatar className="">
         <AvatarImage src="" alt="@shadcn" />

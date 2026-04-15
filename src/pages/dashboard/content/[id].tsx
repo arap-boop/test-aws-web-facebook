@@ -14,7 +14,7 @@ const DashboardsDetail = () => {
   const contents = content.find((item) => item.id === String(id));
 
   return (
-    <div className="bg-white flex flex-col bg-gradient-to-b from-gray-50 to-white w-full">
+    <div className="bg-white flex flex-col w-full">
       <div className="relative w-full flex justify-center ">
         <div className="absolute inset-0 "></div>
         {contents?.photo && (
@@ -46,15 +46,15 @@ const DashboardsDetail = () => {
                       <p className="font-medium text-sm">{contents.following}</p>
                       <div className="ml-32 flex flex-row gap-3">
                         <div className="bg-blue-600 flex flex-row items-center gap-2 text-white w-32 justify-center rounded-lg h-8">
-                          <TfiEmail /> Kirim Email
+                          <TfiEmail /> Kirim Emails
                         </div>
-                        <div className="bg-gray-400 flex flex-row items-center gap-2 text-white w-32 justify-center rounded-lg h-8">
+                        <div className="bg-white flex flex-row items-center gap-2 text-white w-32 justify-center rounded-lg h-8">
                           <p className="text-black">
                             <FaFacebookMessenger />
                           </p>
                           Kirim Pesan
                         </div>
-                        <div className="bg-gray-400 flex flex-row items-center gap-2 text-white w-24 justify-center rounded-lg h-8">
+                        <div className="bg-white flex flex-row items-center gap-2 text-white w-24 justify-center rounded-lg h-8">
                           <p className="text-black justify-start flex">
                             <FaFolderPlus />
                           </p>
